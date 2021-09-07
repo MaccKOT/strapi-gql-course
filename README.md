@@ -7,6 +7,7 @@ Course video: [https://www.youtube.com/watch?v=4Ntd414raYc](https://www.youtube.
 Frontend: [http://localhost:3000/](http://localhost:3000/)
 
 Backend: [http://localhost:1337/](http://localhost:1337/)
+
 GraphQL playground: [http://localhost:1337/graphql](http://localhost:1337/graphql)
 
 Frontend created with ⚡ [Vite](https://vitejs.dev/)
