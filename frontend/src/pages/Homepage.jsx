@@ -11,6 +11,10 @@ const REVIEWS = gql`
       body
       rating
       id
+      categories {
+        name
+        id
+      }
     }
   }
 `;
@@ -31,7 +35,11 @@ export default function Homepage() {
           <div className='rating'>{review.rating}</div>
           <h2>{review.title}</h2>
 
-          <small>console list placeholder</small>
+          {review.categories.map((c) => (
+            <small className='pills' key={c.id}>
+              {c.name}
+            </small>
+          ))}
 
           <p>{review.body.substring(0, 200)}...</p>
           <Link to={`/details/${review.id}`}>Read more</Link>

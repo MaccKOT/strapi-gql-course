@@ -12,6 +12,10 @@ const REVIEW = gql`
       body
       rating
       id
+      categories {
+        name
+        id
+      }
     }
   }
 `;
@@ -40,7 +44,11 @@ export default function ReviewDetails() {
       <div className='rating'>{data.review.rating}</div>
       <h2>{data.review.title}</h2>
 
-      <small>console list</small>
+      {data.review.categories.map((c) => (
+        <small className='pills' key={c.id}>
+          {c.name}
+        </small>
+      ))}
 
       <p dangerouslySetInnerHTML={markdownBodyText()}></p>
     </div>
