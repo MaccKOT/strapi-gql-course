@@ -8,6 +8,8 @@ export default function Homepage() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{`☹️ ${error} `}</p>;
 
+  // todo : output rich text from review.body to plain text (need renderer for marked)
+
   return (
     <div>
       {data.map((review) => (
