@@ -40,6 +40,20 @@ a:hover {
   border-bottom: 2px solid;
 }
 
+.site-header .categories {
+  text-align: right;
+}
+
+.site-header .categories a {
+  margin-left: 6px;
+  padding: 0 4px;
+}
+
+.site-header .categories a:hover {
+  background: #8e2ad6;
+  color: white;
+}
+
 /* review list */
 .review-card {
   background: white;
